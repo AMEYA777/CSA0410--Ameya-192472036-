@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int available = 5;
+    int request = 3;
+
+    if (request <= available) {
+        available -= request;
+        printf("Request Granted\n");
+        printf("System is in Safe State");
+    } else {
+        printf("Request Denied\n");
+        printf("System is in Unsafe State");
+    }
+
+    return 0;
+}
