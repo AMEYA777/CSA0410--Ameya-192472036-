@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int start, n;
+
+    printf("Enter starting block: ");
+    scanf("%d", &start);
+
+    printf("Enter number of blocks: ");
+    scanf("%d", &n);
+
+    printf("\nSequential Allocation:\n");
+
+    for (int i = 0; i < n; i++)
+        printf("%d ", start + i);
+
+    return 0;
+}
